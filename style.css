@@ -1,0 +1,38 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffeaea;
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+}
+
+.box {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: inline-block;
+  max-width: 400px;
+}
+
+.messaggio {
+  margin-top: 20px;
+  font-style: italic;
+  color: #b30059;
+}
+
+.quiz {
+  margin-top: 40px;
+}
+.quiz button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff80ab;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.quiz button:hover {
+  background-color: #ff4d88;
+}
