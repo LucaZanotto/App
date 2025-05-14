@@ -36,3 +36,16 @@ body {
 .quiz button:hover {
   background-color: #ff4d88;
 }
+
+#menu button {
+  margin: 10px;
+  padding: 12px 20px;
+  border: none;
+  background-color: #ff80ab;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#menu button:hover {
+  background-color: #ff4d88;
+}

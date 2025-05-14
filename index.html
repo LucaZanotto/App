@@ -2,28 +2,53 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>EHEHEHEHEHEHEHEHEH ❤️</title>
+  <title>Porsetto ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="box">
     <h1>Ciao Patata! ❤️</h1>
-    <p id="contatore">Calcolo giorni...</p>
-    <p class="messaggio">Ciao patata eheheh💌</p>
-    <p id="frase">Caricamento...</p>
-  <div class="quiz">
-    <h2>Quiz: Dove ci siamo conosciuti?</h2>
-    <button onclick="controllaRisposta('a')">Su Hinge</button>
-    <button onclick="controllaRisposta('b')">Al parco</button>
-    <button onclick="controllaRisposta('c')">All'università</button>
-    <p id="risultatoQuiz"></p>
-</div>
+
+    <!-- Pulsanti menu principale -->
+    <div id="menu">
+      <button onclick="mostraSezione('quiz')">Quiz</button>
+      <button onclick="mostraSezione('contatore')">Contatore Giorni</button>
+      <button onclick="mostraSezione('frase')">Frase del Giorno</button>
+      <button onclick="mostraSezione('foto')">Foto</button>
+    </div>
+
+    <!-- Sezione quiz -->
+    <div id="quiz" class="sezione" style="display:none">
+      <h2>Quiz: <span id="domandaQuiz"></span></h2>
+      <div id="bottoniRisposte"></div>
+      <p id="risultatoQuiz"></p>
+      <button onclick="prossimaDomanda()">Prossima domanda</button>
+    </div>
+
+    <!-- Sezione contatore -->
+    <div id="contatore" class="sezione" style="display:none">
+      <p id="contatoreTesto">Caricamento...</p>
+    </div>
+
+    <!-- Sezione frase -->
+    <div id="frase" class="sezione" style="display:none">
+      <p id="fraseDelGiorno">Caricamento...</p>
+    </div>
+
+    <!-- Sezione foto -->
+    <div id="foto" class="sezione" style="display:none">
+      <img id="immagineCasuale" src="" alt="Foto" style="max-width: 100%; border-radius: 15px;">
+      <br>
+      <button onclick="prossimaFoto()">Un'altra! 📸</button>
+    </div>
   </div>
-<button id="startMusic" onclick="avviaMusica()">Clicca per ascoltare la musica 🎶 (scusa patata non sapevo come fare altrimenti per farla partire ma appena premi questo messaggio scompare)</button>
-<audio id="musica" loop>
-  <source src="music.mp3" type="audio/mp3">
-  Il tuo browser non supporta l'audio.
-</audio>
+
+  
+  <audio id="musica" loop>
+    <source src="music.mp3" type="audio/mp3">
+    Il tuo browser non supporta l'audio.
+  </audio>
+
   <script src="script.js"></script>
 </body>
 </html>
